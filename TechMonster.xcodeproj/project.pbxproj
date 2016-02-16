@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC0283F11C72BEA700F3ACA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0283F01C72BEA700F3ACA2 /* AppDelegate.swift */; };
+		EC0283F31C72BEA700F3ACA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0283F21C72BEA700F3ACA2 /* ViewController.swift */; };
+		EC0283F61C72BEA700F3ACA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0283F41C72BEA700F3ACA2 /* Main.storyboard */; };
+		EC0283F81C72BEA700F3ACA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0283F71C72BEA700F3ACA2 /* Assets.xcassets */; };
+		EC0283FB1C72BEA700F3ACA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0283F91C72BEA700F3ACA2 /* LaunchScreen.storyboard */; };
+		EC0284061C72BEA700F3ACA2 /* TechMonsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0284051C72BEA700F3ACA2 /* TechMonsterTests.swift */; };
+		EC0284111C72BEA700F3ACA2 /* TechMonsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0284101C72BEA700F3ACA2 /* TechMonsterUITests.swift */; };
+		EC0284351C72BEED00F3ACA2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC02841F1C72BEED00F3ACA2 /* Default-568h@2x.png */; };
+		EC0284361C72BEED00F3ACA2 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0284201C72BEED00F3ACA2 /* Default-667h@2x.png */; };
+		EC0284371C72BEED00F3ACA2 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0284211C72BEED00F3ACA2 /* Default-736h@3x.png */; };
+		EC0284381C72BEED00F3ACA2 /* misaki_gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC0284231C72BEED00F3ACA2 /* misaki_gothic.ttf */; };
+		EC0284391C72BEED00F3ACA2 /* battlebg.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0284251C72BEED00F3ACA2 /* battlebg.png */; };
+		EC02843A1C72BEED00F3ACA2 /* bgimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC0284261C72BEED00F3ACA2 /* bgimage.jpg */; };
+		EC02843B1C72BEED00F3ACA2 /* falcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0284271C72BEED00F3ACA2 /* falcon.png */; };
+		EC02843C1C72BEED00F3ACA2 /* gold_button.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0284281C72BEED00F3ACA2 /* gold_button.png */; };
+		EC02843D1C72BEED00F3ACA2 /* lobby.png in Resources */ = {isa = PBXBuildFile; fileRef = EC0284291C72BEED00F3ACA2 /* lobby.png */; };
+		EC02843E1C72BEED00F3ACA2 /* waku.png in Resources */ = {isa = PBXBuildFile; fileRef = EC02842A1C72BEED00F3ACA2 /* waku.png */; };
+		EC02843F1C72BEED00F3ACA2 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC02842C1C72BEED00F3ACA2 /* Enemy.swift */; };
+		EC0284401C72BEED00F3ACA2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC02842D1C72BEED00F3ACA2 /* Player.swift */; };
+		EC0284411C72BEED00F3ACA2 /* TechDraUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC02842E1C72BEED00F3ACA2 /* TechDraUtility.swift */; };
+		EC0284421C72BEED00F3ACA2 /* BGM_battle001.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC0284301C72BEED00F3ACA2 /* BGM_battle001.mp3 */; };
+		EC0284431C72BEED00F3ACA2 /* lobby.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC0284311C72BEED00F3ACA2 /* lobby.mp3 */; };
+		EC0284441C72BEED00F3ACA2 /* SE_attack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC0284321C72BEED00F3ACA2 /* SE_attack.mp3 */; };
+		EC0284451C72BEED00F3ACA2 /* SE_fanfare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC0284331C72BEED00F3ACA2 /* SE_fanfare.mp3 */; };
+		EC0284461C72BEED00F3ACA2 /* SE_gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC0284341C72BEED00F3ACA2 /* SE_gameover.mp3 */; };
+		EC0284481C730E3600F3ACA2 /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0284471C730E3600F3ACA2 /* LobbyViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC0284021C72BEA700F3ACA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC0283E51C72BEA700F3ACA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC0283EC1C72BEA700F3ACA2;
+			remoteInfo = TechMonster;
+		};
+		EC02840D1C72BEA700F3ACA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC0283E51C72BEA700F3ACA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC0283EC1C72BEA700F3ACA2;
+			remoteInfo = TechMonster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC0283ED1C72BEA700F3ACA2 /* TechMonster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechMonster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0283F01C72BEA700F3ACA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC0283F21C72BEA700F3ACA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC0283F51C72BEA700F3ACA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC0283F71C72BEA700F3ACA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC0283FA1C72BEA700F3ACA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC0283FC1C72BEA700F3ACA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC0284011C72BEA700F3ACA2 /* TechMonsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechMonsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0284051C72BEA700F3ACA2 /* TechMonsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechMonsterTests.swift; sourceTree = "<group>"; };
+		EC0284071C72BEA700F3ACA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC02840C1C72BEA700F3ACA2 /* TechMonsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechMonsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0284101C72BEA700F3ACA2 /* TechMonsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechMonsterUITests.swift; sourceTree = "<group>"; };
+		EC0284121C72BEA700F3ACA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC02841F1C72BEED00F3ACA2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EC0284201C72BEED00F3ACA2 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		EC0284211C72BEED00F3ACA2 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		EC0284231C72BEED00F3ACA2 /* misaki_gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = misaki_gothic.ttf; sourceTree = "<group>"; };
+		EC0284251C72BEED00F3ACA2 /* battlebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battlebg.png; sourceTree = "<group>"; };
+		EC0284261C72BEED00F3ACA2 /* bgimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgimage.jpg; sourceTree = "<group>"; };
+		EC0284271C72BEED00F3ACA2 /* falcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = falcon.png; sourceTree = "<group>"; };
+		EC0284281C72BEED00F3ACA2 /* gold_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gold_button.png; sourceTree = "<group>"; };
+		EC0284291C72BEED00F3ACA2 /* lobby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lobby.png; sourceTree = "<group>"; };
+		EC02842A1C72BEED00F3ACA2 /* waku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waku.png; sourceTree = "<group>"; };
+		EC02842C1C72BEED00F3ACA2 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		EC02842D1C72BEED00F3ACA2 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		EC02842E1C72BEED00F3ACA2 /* TechDraUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechDraUtility.swift; sourceTree = "<group>"; };
+		EC0284301C72BEED00F3ACA2 /* BGM_battle001.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BGM_battle001.mp3; sourceTree = "<group>"; };
+		EC0284311C72BEED00F3ACA2 /* lobby.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lobby.mp3; sourceTree = "<group>"; };
+		EC0284321C72BEED00F3ACA2 /* SE_attack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_attack.mp3; sourceTree = "<group>"; };
+		EC0284331C72BEED00F3ACA2 /* SE_fanfare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_fanfare.mp3; sourceTree = "<group>"; };
+		EC0284341C72BEED00F3ACA2 /* SE_gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_gameover.mp3; sourceTree = "<group>"; };
+		EC0284471C730E3600F3ACA2 /* LobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC0283EA1C72BEA700F3ACA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0283FE1C72BEA700F3ACA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0284091C72BEA700F3ACA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC0283E41C72BEA700F3ACA2 = {
+			isa = PBXGroup;
+			children = (
+				EC0283EF1C72BEA700F3ACA2 /* TechMonster */,
+				EC0284041C72BEA700F3ACA2 /* TechMonsterTests */,
+				EC02840F1C72BEA700F3ACA2 /* TechMonsterUITests */,
+				EC0283EE1C72BEA700F3ACA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC0283EE1C72BEA700F3ACA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC0283ED1C72BEA700F3ACA2 /* TechMonster.app */,
+				EC0284011C72BEA700F3ACA2 /* TechMonsterTests.xctest */,
+				EC02840C1C72BEA700F3ACA2 /* TechMonsterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC0283EF1C72BEA700F3ACA2 /* TechMonster */ = {
+			isa = PBXGroup;
+			children = (
+				EC02841E1C72BEED00F3ACA2 /* Defaults */,
+				EC0284221C72BEED00F3ACA2 /* Fonts */,
+				EC0284241C72BEED00F3ACA2 /* Images */,
+				EC02842B1C72BEED00F3ACA2 /* Models */,
+				EC02842F1C72BEED00F3ACA2 /* Sounds */,
+				EC0283F01C72BEA700F3ACA2 /* AppDelegate.swift */,
+				EC0283F21C72BEA700F3ACA2 /* ViewController.swift */,
+				EC0283F41C72BEA700F3ACA2 /* Main.storyboard */,
+				EC0283F71C72BEA700F3ACA2 /* Assets.xcassets */,
+				EC0283F91C72BEA700F3ACA2 /* LaunchScreen.storyboard */,
+				EC0283FC1C72BEA700F3ACA2 /* Info.plist */,
+				EC0284471C730E3600F3ACA2 /* LobbyViewController.swift */,
+			);
+			path = TechMonster;
+			sourceTree = "<group>";
+		};
+		EC0284041C72BEA700F3ACA2 /* TechMonsterTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC0284051C72BEA700F3ACA2 /* TechMonsterTests.swift */,
+				EC0284071C72BEA700F3ACA2 /* Info.plist */,
+			);
+			path = TechMonsterTests;
+			sourceTree = "<group>";
+		};
+		EC02840F1C72BEA700F3ACA2 /* TechMonsterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC0284101C72BEA700F3ACA2 /* TechMonsterUITests.swift */,
+				EC0284121C72BEA700F3ACA2 /* Info.plist */,
+			);
+			path = TechMonsterUITests;
+			sourceTree = "<group>";
+		};
+		EC02841E1C72BEED00F3ACA2 /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				EC02841F1C72BEED00F3ACA2 /* Default-568h@2x.png */,
+				EC0284201C72BEED00F3ACA2 /* Default-667h@2x.png */,
+				EC0284211C72BEED00F3ACA2 /* Default-736h@3x.png */,
+			);
+			path = Defaults;
+			sourceTree = "<group>";
+		};
+		EC0284221C72BEED00F3ACA2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EC0284231C72BEED00F3ACA2 /* misaki_gothic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EC0284241C72BEED00F3ACA2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EC0284251C72BEED00F3ACA2 /* battlebg.png */,
+				EC0284261C72BEED00F3ACA2 /* bgimage.jpg */,
+				EC0284271C72BEED00F3ACA2 /* falcon.png */,
+				EC0284281C72BEED00F3ACA2 /* gold_button.png */,
+				EC0284291C72BEED00F3ACA2 /* lobby.png */,
+				EC02842A1C72BEED00F3ACA2 /* waku.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		EC02842B1C72BEED00F3ACA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC02842C1C72BEED00F3ACA2 /* Enemy.swift */,
+				EC02842D1C72BEED00F3ACA2 /* Player.swift */,
+				EC02842E1C72BEED00F3ACA2 /* TechDraUtility.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC02842F1C72BEED00F3ACA2 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EC0284301C72BEED00F3ACA2 /* BGM_battle001.mp3 */,
+				EC0284311C72BEED00F3ACA2 /* lobby.mp3 */,
+				EC0284321C72BEED00F3ACA2 /* SE_attack.mp3 */,
+				EC0284331C72BEED00F3ACA2 /* SE_fanfare.mp3 */,
+				EC0284341C72BEED00F3ACA2 /* SE_gameover.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC0283EC1C72BEA700F3ACA2 /* TechMonster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC0284151C72BEA700F3ACA2 /* Build configuration list for PBXNativeTarget "TechMonster" */;
+			buildPhases = (
+				EC0283E91C72BEA700F3ACA2 /* Sources */,
+				EC0283EA1C72BEA700F3ACA2 /* Frameworks */,
+				EC0283EB1C72BEA700F3ACA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TechMonster;
+			productName = TechMonster;
+			productReference = EC0283ED1C72BEA700F3ACA2 /* TechMonster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC0284001C72BEA700F3ACA2 /* TechMonsterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC0284181C72BEA700F3ACA2 /* Build configuration list for PBXNativeTarget "TechMonsterTests" */;
+			buildPhases = (
+				EC0283FD1C72BEA700F3ACA2 /* Sources */,
+				EC0283FE1C72BEA700F3ACA2 /* Frameworks */,
+				EC0283FF1C72BEA700F3ACA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC0284031C72BEA700F3ACA2 /* PBXTargetDependency */,
+			);
+			name = TechMonsterTests;
+			productName = TechMonsterTests;
+			productReference = EC0284011C72BEA700F3ACA2 /* TechMonsterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC02840B1C72BEA700F3ACA2 /* TechMonsterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC02841B1C72BEA700F3ACA2 /* Build configuration list for PBXNativeTarget "TechMonsterUITests" */;
+			buildPhases = (
+				EC0284081C72BEA700F3ACA2 /* Sources */,
+				EC0284091C72BEA700F3ACA2 /* Frameworks */,
+				EC02840A1C72BEA700F3ACA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC02840E1C72BEA700F3ACA2 /* PBXTargetDependency */,
+			);
+			name = TechMonsterUITests;
+			productName = TechMonsterUITests;
+			productReference = EC02840C1C72BEA700F3ACA2 /* TechMonsterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC0283E51C72BEA700F3ACA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Masahiro Nambu";
+				TargetAttributes = {
+					EC0283EC1C72BEA700F3ACA2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Z5FRHXC969;
+					};
+					EC0284001C72BEA700F3ACA2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Z5FRHXC969;
+						TestTargetID = EC0283EC1C72BEA700F3ACA2;
+					};
+					EC02840B1C72BEA700F3ACA2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Z5FRHXC969;
+						TestTargetID = EC0283EC1C72BEA700F3ACA2;
+					};
+				};
+			};
+			buildConfigurationList = EC0283E81C72BEA700F3ACA2 /* Build configuration list for PBXProject "TechMonster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC0283E41C72BEA700F3ACA2;
+			productRefGroup = EC0283EE1C72BEA700F3ACA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC0283EC1C72BEA700F3ACA2 /* TechMonster */,
+				EC0284001C72BEA700F3ACA2 /* TechMonsterTests */,
+				EC02840B1C72BEA700F3ACA2 /* TechMonsterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC0283EB1C72BEA700F3ACA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC02843E1C72BEED00F3ACA2 /* waku.png in Resources */,
+				EC0284451C72BEED00F3ACA2 /* SE_fanfare.mp3 in Resources */,
+				EC0283FB1C72BEA700F3ACA2 /* LaunchScreen.storyboard in Resources */,
+				EC02843C1C72BEED00F3ACA2 /* gold_button.png in Resources */,
+				EC0284421C72BEED00F3ACA2 /* BGM_battle001.mp3 in Resources */,
+				EC0284431C72BEED00F3ACA2 /* lobby.mp3 in Resources */,
+				EC0284381C72BEED00F3ACA2 /* misaki_gothic.ttf in Resources */,
+				EC0284351C72BEED00F3ACA2 /* Default-568h@2x.png in Resources */,
+				EC02843D1C72BEED00F3ACA2 /* lobby.png in Resources */,
+				EC0283F81C72BEA700F3ACA2 /* Assets.xcassets in Resources */,
+				EC0284391C72BEED00F3ACA2 /* battlebg.png in Resources */,
+				EC0284441C72BEED00F3ACA2 /* SE_attack.mp3 in Resources */,
+				EC0284461C72BEED00F3ACA2 /* SE_gameover.mp3 in Resources */,
+				EC0283F61C72BEA700F3ACA2 /* Main.storyboard in Resources */,
+				EC02843A1C72BEED00F3ACA2 /* bgimage.jpg in Resources */,
+				EC0284361C72BEED00F3ACA2 /* Default-667h@2x.png in Resources */,
+				EC02843B1C72BEED00F3ACA2 /* falcon.png in Resources */,
+				EC0284371C72BEED00F3ACA2 /* Default-736h@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0283FF1C72BEA700F3ACA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC02840A1C72BEA700F3ACA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC0283E91C72BEA700F3ACA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0284401C72BEED00F3ACA2 /* Player.swift in Sources */,
+				EC0284411C72BEED00F3ACA2 /* TechDraUtility.swift in Sources */,
+				EC0283F31C72BEA700F3ACA2 /* ViewController.swift in Sources */,
+				EC0284481C730E3600F3ACA2 /* LobbyViewController.swift in Sources */,
+				EC0283F11C72BEA700F3ACA2 /* AppDelegate.swift in Sources */,
+				EC02843F1C72BEED00F3ACA2 /* Enemy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0283FD1C72BEA700F3ACA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0284061C72BEA700F3ACA2 /* TechMonsterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0284081C72BEA700F3ACA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0284111C72BEA700F3ACA2 /* TechMonsterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC0284031C72BEA700F3ACA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC0283EC1C72BEA700F3ACA2 /* TechMonster */;
+			targetProxy = EC0284021C72BEA700F3ACA2 /* PBXContainerItemProxy */;
+		};
+		EC02840E1C72BEA700F3ACA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC0283EC1C72BEA700F3ACA2 /* TechMonster */;
+			targetProxy = EC02840D1C72BEA700F3ACA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC0283F41C72BEA700F3ACA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC0283F51C72BEA700F3ACA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC0283F91C72BEA700F3ACA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC0283FA1C72BEA700F3ACA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC0284131C72BEA700F3ACA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC0284141C72BEA700F3ACA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC0284161C72BEA700F3ACA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TechMonster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TechMonster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC0284171C72BEA700F3ACA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TechMonster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TechMonster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC0284191C72BEA700F3ACA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TechMonsterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TechMonsterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TechMonster.app/TechMonster";
+			};
+			name = Debug;
+		};
+		EC02841A1C72BEA700F3ACA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TechMonsterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TechMonsterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TechMonster.app/TechMonster";
+			};
+			name = Release;
+		};
+		EC02841C1C72BEA700F3ACA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TechMonsterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TechMonsterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TechMonster;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EC02841D1C72BEA700F3ACA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TechMonsterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TechMonsterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TechMonster;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC0283E81C72BEA700F3ACA2 /* Build configuration list for PBXProject "TechMonster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC0284131C72BEA700F3ACA2 /* Debug */,
+				EC0284141C72BEA700F3ACA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC0284151C72BEA700F3ACA2 /* Build configuration list for PBXNativeTarget "TechMonster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC0284161C72BEA700F3ACA2 /* Debug */,
+				EC0284171C72BEA700F3ACA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC0284181C72BEA700F3ACA2 /* Build configuration list for PBXNativeTarget "TechMonsterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC0284191C72BEA700F3ACA2 /* Debug */,
+				EC02841A1C72BEA700F3ACA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC02841B1C72BEA700F3ACA2 /* Build configuration list for PBXNativeTarget "TechMonsterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC02841C1C72BEA700F3ACA2 /* Debug */,
+				EC02841D1C72BEA700F3ACA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC0283E51C72BEA700F3ACA2 /* Project object */;
+}
